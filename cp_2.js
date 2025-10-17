@@ -18,9 +18,9 @@ function fetchProductsThen() {
 
 async function fetchProductsAsync() {
     try {
-        let results = await fetch(apiLink);
+        let res = await fetch(apiLink);
         let details = await res.json();
-        displayProducts(data);
+        displayProducts(details);
     } catch (error) {
         handleError(error);
     }
@@ -52,4 +52,8 @@ function displayProducts(products) {
         prodContainer.appendChild(listing);
 
     });
+}
+
+function handleError(error) {
+    console.error(`ERROR 404: ${error.message}`);
 }
