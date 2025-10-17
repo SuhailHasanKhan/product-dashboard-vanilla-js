@@ -57,3 +57,7 @@ function displayProducts(products) {
 function handleError(error) {
     console.error(`ERROR 404: ${error.message}`);
 }
+
+
+
+fetchProductsAsync();
