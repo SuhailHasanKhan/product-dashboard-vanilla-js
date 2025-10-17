@@ -59,5 +59,5 @@ function handleError(error) {
 }
 
 
-
+fetchProductsThen();
 fetchProductsAsync();
